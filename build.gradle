@@ -1,7 +1,6 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.2.0'
-	id 'io.spring.dependency-management' version '1.1.4'
+	id 'application'
 }
 
 group = 'com.app'
@@ -11,14 +10,17 @@ java {
 	sourceCompatibility = '17'
 }
 
+application {
+	mainClassName = 'com.app.webscrapercli.WebScraperCliApplication'
+}
+
 repositories {
 	mavenCentral()
 }
 
 dependencies {
 	implementation 'org.jsoup:jsoup:1.16.1'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compileOnly 'org.jsoup:jsoup:1.16.1'
 }
 
 tasks.named('test') {
