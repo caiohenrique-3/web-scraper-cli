@@ -20,7 +20,6 @@ repositories {
 
 dependencies {
 	implementation 'org.jsoup:jsoup:1.16.1'
-	compileOnly 'org.jsoup:jsoup:1.16.1'
 }
 
 tasks.named('test') {
