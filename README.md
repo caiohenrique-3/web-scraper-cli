@@ -9,3 +9,7 @@ Apps" checkpoint on the [fullstack roadmap](https://roadmap.sh/full-stack)
 
 The "-q" parameter is optional, it makes gradle output less things on the
 screen.
+
+## Preview
+
+![Screenshot1](showcase.png)
